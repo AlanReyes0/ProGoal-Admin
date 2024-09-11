@@ -1,0 +1,83 @@
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding-top: 40px; /* Ajusta este valor según la altura de tu barra horizontal */
+    
+      
+  }
+/* Estilos para la barra horizontal fija en la parte superior */
+/* Estilos para la barra horizontal fija en la parte superior */
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 98%;
+  background-color: #333;
+  color: white;
+  text-align: right ;
+  padding: 10px;
+  z-index: 1000; /* Asegúrate de que la barra esté siempre encima */
+}
+
+.top-bar h2.username {
+  margin: 0;
+  padding: 0;
+  color: white;
+  
+  width: 100%;
+  display: inline-block;
+}
+
+
+/* Estilos para el menú vertical */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #f1f1f1;
+  position: fixed;
+  top: 50px; /* Asegúrate de que el menú comience debajo de la barra superior */
+  height: calc(100% - 50px); /* Ajusta la altura del menú */
+  overflow: auto;
+}
+
+ul li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+ul img {
+  width: 100%;
+  height: auto;
+}
+
+ul li.logout {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  text-align: left;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+ul li.logout .button {
+  background-color: #ee7373;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 100px;
+  text-align: left;
+}
+
+ul li.logout .button:hover {
+  background-color: #eb1f1f;
+}

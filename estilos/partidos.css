@@ -1,0 +1,54 @@
+body {
+    overflow: hidden;
+}
+
+.main-content {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15%;
+    padding: 10px 12px;
+    padding-top: 30px;
+    background-color: rgb(255, 255, 255);
+    height: calc(100vh - 50px);
+    overflow: auto;
+}
+
+.jornadas-info {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.tabla-jornadas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tabla-jornadas th, .tabla-jornadas td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tabla-jornadas th {
+    background-color: #f2f2f2;
+}
+
+input[type="number"] {
+    width: 60px;
+}
+
+.btn-actualizar {
+    padding: 5px 10px;
+    border: none;
+    background-color: #0056b3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-actualizar:hover {
+    background-color: #003cff;
+}

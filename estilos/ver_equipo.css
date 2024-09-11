@@ -1,0 +1,106 @@
+body {
+    overflow: hidden;
+}
+
+.main-content {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15%; /* Espacio para el menú vertical */
+    padding: 10px 12px;
+    padding-top: 20px; /* Espacio para la barra superior */
+    
+    height: calc(100vh - 50px); /* Ajusta la altura del contenido principal */
+    overflow: auto;
+    background-color: rgb(221, 225, 230);
+}
+
+.equipo-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px); /* Ajusta el ancho del div para que se mantenga dentro del contenedor */
+    margin-left: 0; /* Alinea el div a la izquierda */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+    position: relative; /* Necesario para posicionar el botón dentro de este contenedor */
+}
+
+.equipo-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.equipo-info h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.equipo-info p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.add-player-button {
+    position: absolute;
+    top: 20px; /* Ajusta el valor según sea necesario */
+    right: 20px; /* Ajusta el valor según sea necesario */
+}
+
+.add-player-button button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0056b3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-player-button button:hover {
+    background-color: #003cff;
+}
+
+.players-list {
+    margin-top: 20px;
+}
+
+.tabla-jugadores {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Para el borde redondeado en la tabla */
+}
+
+.tabla-jugadores th, .tabla-jugadores td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabla-jugadores th {
+    background-color: #4590e1;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tabla-jugadores tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabla-jugadores tr:hover {
+    background-color: #ddd;
+}
+
+.tabla-jugadores td {
+    font-size: 16px;
+    color: #333;
+}
+
+.tabla-jugadores th {
+    font-size: 18px;
+}
